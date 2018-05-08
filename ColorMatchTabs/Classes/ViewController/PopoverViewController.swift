@@ -20,8 +20,8 @@ private let ContentPadding: CGFloat = 20
     
     func numberOfItems(inPopoverViewController popoverViewController: PopoverViewController) -> Int
     
-    func popoverViewController(_ popoverViewController: PopoverViewController, iconAt index: Int) -> UIImage
-    func popoverViewController(_ popoverViewController: PopoverViewController, hightlightedIconAt index: Int) -> UIImage
+    func popoverViewController(_ popoverViewController: PopoverViewController, iconAt index: Int) -> UIImage?
+    func popoverViewController(_ popoverViewController: PopoverViewController, hightlightedIconAt index: Int) -> UIImage?
     
 }
 

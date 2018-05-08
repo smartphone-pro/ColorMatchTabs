@@ -15,8 +15,8 @@ public protocol ColorMatchTabsViewControllerDataSource: class {
     func tabsViewController(_ controller: ColorMatchTabsViewController, viewControllerAt index: Int) -> UIViewController
     
     func tabsViewController(_ controller: ColorMatchTabsViewController, titleAt index: Int) -> String
-    func tabsViewController(_ controller: ColorMatchTabsViewController, iconAt index: Int) -> UIImage
-    func tabsViewController(_ controller: ColorMatchTabsViewController, hightlightedIconAt index: Int) -> UIImage
+    func tabsViewController(_ controller: ColorMatchTabsViewController, iconAt index: Int) -> UIImage?
+    func tabsViewController(_ controller: ColorMatchTabsViewController, hightlightedIconAt index: Int) -> UIImage?
     func tabsViewController(_ controller: ColorMatchTabsViewController, tintColorAt index: Int) -> UIColor
 
 }
@@ -314,11 +314,11 @@ extension ColorMatchTabsViewController: ColorTabsDataSource {
         return colorMatchTabDataSource!.tabsViewController(self, titleAt: index)
     }
     
-    open func tabSwitcher(_ tabSwitcher: ColorTabs, iconAt index: Int) -> UIImage {
+    open func tabSwitcher(_ tabSwitcher: ColorTabs, iconAt index: Int) -> UIImage? {
         return colorMatchTabDataSource!.tabsViewController(self, iconAt: index)
     }
     
-    open func tabSwitcher(_ tabSwitcher: ColorTabs, hightlightedIconAt index: Int) -> UIImage {
+    open func tabSwitcher(_ tabSwitcher: ColorTabs, hightlightedIconAt index: Int) -> UIImage? {
         return colorMatchTabDataSource!.tabsViewController(self, hightlightedIconAt: index)
     }
     
@@ -358,11 +358,11 @@ extension ColorMatchTabsViewController: PopoverViewControllerDataSource {
         return colorMatchTabDataSource?.numberOfItems(inController: self) ?? 0
     }
     
-    open func popoverViewController(_ popoverViewController: PopoverViewController, iconAt index: Int) -> UIImage {
+    open func popoverViewController(_ popoverViewController: PopoverViewController, iconAt index: Int) -> UIImage? {
         return colorMatchTabDataSource!.tabsViewController(self, iconAt: index)
     }
     
-    open func popoverViewController(_ popoverViewController: PopoverViewController, hightlightedIconAt index: Int) -> UIImage {
+    open func popoverViewController(_ popoverViewController: PopoverViewController, hightlightedIconAt index: Int) -> UIImage? {
         return colorMatchTabDataSource!.tabsViewController(self, hightlightedIconAt: index)
     }
     

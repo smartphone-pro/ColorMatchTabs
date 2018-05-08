@@ -17,8 +17,8 @@ private let HighlighterAnimationDuration: TimeInterval = SwitchAnimationDuration
     
     func numberOfItems(inTabSwitcher tabSwitcher: ColorTabs) -> Int
     func tabSwitcher(_ tabSwitcher: ColorTabs, titleAt index: Int) -> String
-    func tabSwitcher(_ tabSwitcher: ColorTabs, iconAt index: Int) -> UIImage
-    func tabSwitcher(_ tabSwitcher: ColorTabs, hightlightedIconAt index: Int) -> UIImage
+    func tabSwitcher(_ tabSwitcher: ColorTabs, iconAt index: Int) -> UIImage?
+    func tabSwitcher(_ tabSwitcher: ColorTabs, hightlightedIconAt index: Int) -> UIImage?
     func tabSwitcher(_ tabSwitcher: ColorTabs, tintColorAt index: Int) -> UIColor
     
 }

@@ -1,5 +1,5 @@
 PODS:
-  - ColorMatchTabs (1.0.8)
+  - ColorMatchTabs (2.0.2)
 
 DEPENDENCIES:
   - ColorMatchTabs (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ColorMatchTabs: 3ebdd22200924163e3c3f4d6c4cbabc1d83db316
+  ColorMatchTabs: 2b3b25bf26dcdc3358d689cec1926e933d0a6ec8
 
 PODFILE CHECKSUM: ab163ed25fc44cbc1d4ce0c5359c7f321abd68de
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.5.0
