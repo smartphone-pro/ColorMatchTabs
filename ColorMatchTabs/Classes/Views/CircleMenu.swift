@@ -31,7 +31,7 @@ open class CircleMenu: UIControl {
     @IBInspectable open weak var delegate: CircleMenuDelegate?
     
     /// Delegate.
-    @IBInspectable open weak var dataSource: CircleMenuDataSource?
+    open weak var dataSource: CircleMenuDataSource?
     
     /// Animation delay.
     @IBInspectable open var animationDelay: TimeInterval = 0

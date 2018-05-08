@@ -35,14 +35,14 @@ extension ColorMatchTabsViewControllerDelegate {
 
 open class ColorMatchTabsViewController: UITabBarController {
     
-    @IBInspectable open weak var colorMatchTabDataSource: ColorMatchTabsViewControllerDataSource? {
+    open weak var colorMatchTabDataSource: ColorMatchTabsViewControllerDataSource? {
         didSet {
             _view.scrollMenu.dataSource = colorMatchTabDataSource == nil ? nil : self
             _view.tabs.dataSource = colorMatchTabDataSource == nil ? nil : self
         }
     }
     
-    @IBInspectable open weak var colorMatchTabDelegate: ColorMatchTabsViewControllerDelegate?
+    open weak var colorMatchTabDelegate: ColorMatchTabsViewControllerDelegate?
     
     @IBInspectable open var scrollEnabled = true {
         didSet {
