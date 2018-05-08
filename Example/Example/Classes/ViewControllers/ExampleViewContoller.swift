@@ -39,11 +39,11 @@ extension ExampleViewContoller: ColorMatchTabsViewControllerDataSource {
         return TabItemsProvider.items[index].title
     }
     
-    func tabsViewController(_ controller: ColorMatchTabsViewController, iconAt index: Int) -> UIImage {
+    func tabsViewController(_ controller: ColorMatchTabsViewController, iconAt index: Int) -> UIImage? {
         return TabItemsProvider.items[index].normalImage
     }
     
-    func tabsViewController(_ controller: ColorMatchTabsViewController, hightlightedIconAt index: Int) -> UIImage {
+    func tabsViewController(_ controller: ColorMatchTabsViewController, hightlightedIconAt index: Int) -> UIImage? {
         return TabItemsProvider.items[index].highlightedImage
     }
     
