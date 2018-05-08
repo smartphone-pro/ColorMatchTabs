@@ -1,6 +1,6 @@
 # ColorMatchTabs
 
-![Swift 2.3.x](https://img.shields.io/badge/Swift-2.3.x-orange.svg)
+![Swift 4.1.x](https://img.shields.io/badge/Swift-2.3.x-orange.svg)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/ColorMatchTabs.svg)](https://img.shields.io/cocoapods/v/GuillotineMenu.svg)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
